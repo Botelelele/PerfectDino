@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
 	init();
 	SDL_Event event;
 	SDL_Rect score_pos = {10,10,100,100};
-	SDL_Rect gen_pos = { (int)(SCREEN_WIDTH*5/6),10,100,100 };
+	SDL_Rect gen_pos = { (SCREEN_WIDTH*5/6),10,80,80 };
 	const Uint8* keystate = nullptr;
 	enemies::Obstacle* temp_ob=nullptr;
 	enemies::Obstacle* nearest_obst=nullptr;
@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
 		players.push_back(nullptr);
 		players.back() = new Dino;
 		players.back()->initialize(fps.framecount);
-		mutate(players.back());
+		//mutate(players.back());
 	}
 	bool leave = 0;
 	bool clicked_U = 0;
