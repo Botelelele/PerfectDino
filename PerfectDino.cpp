@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
 		players.push_back(nullptr);
 		players.back() = new Dino;
 		players.back()->initialize(fps.framecount);
-		//mutate(players.back()); without any mutations at first to make the whole process slower
+		mutate(players.back());
 	}
 	bool leave = 0;
 	bool clicked_U = 0;
