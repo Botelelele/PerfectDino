@@ -1,4 +1,4 @@
-Copy of Dino from Chrome with implementation of primitive AI learning how to survive as long as possible.
+Copy of Dino from Chrome with implementation of primitive AI learning (genetic algorithm without diversity index) how to survive as long as possible.
 
 Technologies used:
 SDL 2.0.10,
